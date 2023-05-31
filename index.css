@@ -36,7 +36,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
-    text-decoration: none;
+  
 }
 
 .nav-links ul li {
@@ -44,20 +44,20 @@ nav img {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    text-decoration: none;
 }
 
 .nav-links ul li a {
-    color: #583333;
+    color: rgb(95, 22, 22);
     font-weight: bold;
     font-size: 19px;
     text-decoration: none;
+   
 }
 
 .nav-links ul li a:hover {
-    color: #c4c7ae;
+   
     transition: .3s;
-
+    color: bisque;
 }
 
 .text-box {
@@ -93,7 +93,7 @@ nav img {
     padding: 12px 34px;
     background-color: transparent;
     border: 1px solid #655959;
-    color: bisque;
+    color: rgb(252, 251, 249);
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
@@ -161,6 +161,9 @@ nav .fa {
         top:10px;
         left:7px;
         margin: 5px;
+    }
+    nav ul li a{
+        text-decoration: none;
     }
 
     .nav-links ul {
@@ -270,7 +273,7 @@ p{
     padding-bottom: 50px;
 }
 .services-col{
-    display: inline;
+    flex-basis: 31%;
 }
 .cta{
     margin: 100px auto;
@@ -311,5 +314,68 @@ footer h4{
     margin-bottom: 25px;
     font-weight: 600;
    margin-top: 20px;
+}
+.services-col{
+    display: inline;
+}
+
+.sub-header{
+    height:50vh;
+    width:100%;
+    background-image:  linear-gradient(rgba(151, 154, 137, 0.936), rgba(84, 70, 105, 0.5)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJSb4nIpYb3PBwnvyrYmqqAUD0aA5z5XxkdA&usqp=CAU);
+    object-fit: cover;
+    background-size: cover;
+    text-align: center;
+    color:rgb(253, 237, 237);
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom:50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.about-col img{
+    width: 600px;
+    margin-bottom: 20px;
+    height:500px;
+}
+.about-col h1{
+    font-weight:bold;
+    padding: 0;
+}
+.about-col p{
+    color: #292424;
+    padding: 15px 15px 25px;
+}
+.about-col .hero-btn{
+    color:rgb(235, 228, 221);
+   background-color: rgb(28, 64, 77);
+   border:1px #bdb4b4;
+}
+.about-col .hero-btn:hover{
+    background-color: rgb(130, 152, 160);
+    color:rgb(235, 228, 221);
+   
+}
+@media(max-width: 700px){
+    .about-col img{
+        width: 100%;
+        height:300px;
+    }
+    .about-col{
+        flex-basis: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .cta{
+        background-size: cover;
+    }
 }
 
