@@ -86,7 +86,7 @@ nav img {
     color: #fff;
 }
 
-.text-box .hero-btn {
+ .hero-btn {
     display: inline-block;
     font-size: 17px;
     align-items: center;
@@ -147,15 +147,20 @@ nav .fa {
 
     nav .fa {
         display: block;
-        margin: 100px;
+        margin: 10px;
         font-size: 22px;
         color: #c4c7ae;
         cursor: pointer;
         transition: 1s;
-        position:relative;
-        left:9%;
-        top:0;
+        
 
+    }
+
+    nav #er{
+        position: relative;
+        top:10px;
+        left:7px;
+        margin: 5px;
     }
 
     .nav-links ul {
@@ -172,7 +177,7 @@ nav .fa {
   
 }
 
-.p-col {
+.products-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-top: 20px;
@@ -182,7 +187,7 @@ nav .fa {
     display:inline;
 }
 
-.p-col img {
+.products-col img {
     margin-top: 20px;
     width: 390px;
     height: 220px;
@@ -192,9 +197,9 @@ nav .fa {
     display:block;
 }
 
-.layer {
+.layer {    
     margin-top: 20px;
-    margin-left: 53px;
+    margin-left: 41px;
     background-color: transparent;
     height: 100%;
     width: 100%;
@@ -248,3 +253,53 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+.services .row h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #583333;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+.row p{
+    font-size:12px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.services-col{
+    display: inline;
+}
+.cta{
+    margin: 100px auto;
+    width:80%;
+    background-image:linear-gradient(rgba(219, 233, 241, 0.7),rgba(102, 107, 68, 0.7)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOet2YzvqEvOSqJdnXGfVzG5-rcEAi3sdiw&usqp=CAU);
+    background-size: contain;
+    border-radius:10px;
+    text-align: center;
+    padding:100px 0;
+  
+}
+.cta h1{
+    padding:0;
+    margin-bottom: 40px;
+    color: #583333;
+}
+@media(max-width: 700px){
+    .products-col img{
+        width: 100%;
+    }
+    .products-col{
+        flex-basis: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .cta{
+        background-size: cover;
+    }
+}
+    
+
